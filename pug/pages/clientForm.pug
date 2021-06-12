@@ -1,0 +1,19 @@
+extends ../layout
+
+block title
+  title Стать клиентом
+
+block header
+  include ../parts/navbar
+
+block content
+  section.clientForm 
+    .container.clientForm_container
+      h1.clientForm_title Стать клиентом
+      form.client
+        input.input.name(type='text' placeholder='ИМЯ:' required='Пожалуйста, заполните поле')
+        input.input.company(type='text' placeholder='КОМПАНИЯ:' required='Пожалуйста, заполните поле')
+        input.input.tel(type='tel' placeholder='ТЕЛЕФОН:' required='Пожалуйста, заполните поле')
+        input.input.email(type='email' placeholder='ПОЧТА:' required='Пожалуйста, заполните поле')
+        textarea.form_textarea(name="message", cols="30", rows="10" placeholder="Введите ваше сообщение...")
+        input.btn.submit-btn(type="submit" value="Отправить")

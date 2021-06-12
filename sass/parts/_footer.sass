@@ -1,0 +1,65 @@
+.footer
+  width: 100%
+  background-image: url('../images/bg.jpg')
+  background-position: center
+  background-size: cover
+  background-repeat: no-repeat
+  backdrop-filter: blur(20%)
+.footer_container
+  padding: 20px
+
+.cover
+  padding: 20px 0
+  @extend %space-between
+
+.nav_link
+  font-weight: 600
+  font-size: 18px
+  margin-right: 40px
+  transition: .5s
+  color: $secondColor
+  &:hover
+    color: #fff
+    cursor: pointer
+
+.socials
+  max-width: rem(392px)
+  width: 100%
+  @extend %space-between
+
+.nav_social
+  font-size: 25px
+
+.footer_text
+  font-weight: 600
+  font-size: 14px
+  color: rgba(21, 21, 21, 0.5)
+
+.footer_logo
+  font-family: 'Krona One'
+  font-size: 24px
+  color: $secondColor
+
+@media screen and ( max-width:  1300px)
+  .footer_links
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+  .socials
+    margin: 35px auto
+  .links, .nav_link
+    margin: auto
+  .links
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+@media screen and ( max-width:  750px)
+  .links
+    flex-wrap: wrap
+  .nav_link
+    margin: 1rem 
+  .footer-text_wrap
+    display: flex
+    flex-direction: column
+    text-align: center

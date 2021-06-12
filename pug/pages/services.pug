@@ -1,0 +1,50 @@
+extends ../layout
+
+block title
+  title Услуги
+
+block header
+  include ../parts/navbar
+
+block content
+  section.services
+    .container.services_container
+      .services_desc
+        h2.desc_title Услуги
+        h3.services-desc_text В LIOR разрабатывают сложные веб и мобильные продукты. Мы верим в дизайн, основанный на данных, аналитике и юзабилити.
+      .services-bloks_wrap 
+        .services-blok
+          .services-blok_desc 
+            h2.block_title Исследования
+            p.block_text
+              |Мы верим, что любой продукт должен иметь измеримые KPI, на основании которых он создается и развивается.
+          .services-block_img 
+            img.block_img(src="./images/research.png", alt="img")
+        .services-blok
+          .services-blok_desc 
+            h2.block_title Проектирование и системный анализ
+            p.block_text
+              |Сначала мы проводим предпроектное обследование и определяем границы и ограничения систем. На основании исследования и аналитического отчета составляем единый список приоритезированных задач по каждой системе.
+          .services-block_img 
+            img.block_img(src="./images/planing.png", alt="img")
+        .services-blok
+          .services-blok_desc 
+            h2.block_title Дизайн
+            p.block_text
+              |Работу над дизайном начинаем с общей визуальной концепции, в ходе которой определяем стиль будущего продукта. Концепцию проекта готовит наш креативный директор в команде с арт-директором.
+          .services-block_img 
+            img.block_img(src="./images/desing.png", alt="img")
+        .services-blok
+          .services-blok_desc 
+            h2.block_title Разработка
+            p.block_text
+              |Над проектами трудятся  разработчики под управлением тимлида. Мы самостоятельно целиком решаем сложные технические задачи: высоконагруженные отказоустойчивые порталы, нативные мобильные приложения, интеграция с бэк-системами заказчика.
+          .services-block_img 
+            img.block_img(src="./images/devolopment.png", alt="img")
+        .services-blok
+          .services-blok_desc 
+            h2.block_title Поддержка и развитие
+            p.block_text
+              |Мы не просто выпускаем продукт в свободное плавание. Наша задача — в сжатые сроки собрать MVP проекта и работать дальше над его постоянным улучшением и вводом нового функционала. Мы выдвигаем гипотезы того, что можно улучшить на проекте и тестируем их, чтобы добиться максимального эффекта.
+          .services-block_img 
+            img.block_img(src="./images/girl.png", alt="img")

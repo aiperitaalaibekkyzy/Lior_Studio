@@ -1,0 +1,110 @@
+.wrapper
+  margin-top: 70px
+.item1, .item2, .item3, .item4, .item5
+  max-height: rem(800px)
+.item1Img, .item2Img, .item3Img, .item4Img, .item5Img
+  z-index: -2
+  position: absolute
+.item1Img, .item3Img, .item4-desc, .item5Img
+  right: 0 
+.aboutUs_container 
+  position: relative
+  height: rem(760px)
+.aboutUs-desc_wrap
+  text-align: left
+  max-width: rem(600px)
+  padding: 10% 1rem
+.aboutUs_title
+  font-family: 'Krona One'
+  font-size: 68px
+  color: $firstColor
+  margin-top: 0
+
+.desc_wrap 
+  background: #fff
+  padding: 50px 70px
+  display: block
+.desc
+  font-size: 20px
+  color: $secondColor
+  line-height: 34px
+
+.item1-desc
+  max-width: rem(650px)
+  position: absolute
+  right: 20%
+  bottom: 0
+.item2-desc
+  max-width: rem(790px)
+  position: absolute
+  right: 0
+  bottom: 30%
+.item3-desc
+  max-width: rem(800px)
+  position: absolute
+  bottom: 4%
+  left: 6%
+.item4-desc
+  max-width: rem(810px)
+  position: absolute
+  bottom: 26%
+.item5-desc
+  max-width: rem(810px)
+  position: absolute
+  top: 7%
+
+
+@media screen and ( max-width:  1200px)
+  .aboutUs_container 
+    display: flex
+    align-items: center
+    justify-content: center
+  .item1Img, .item2Img, .item3Img, .item4Img, .item5Img
+    left: 0
+    right: 0
+    width: 100%
+    height: 100%
+  .aboutUs-desc_wrap
+    position: absolute
+    top: 0
+    padding: 2.5rem 20px
+  .desc_wrap 
+    background: #ffffffb6
+  .wrapper
+    margin: auto auto 40px
+  .item1-desc
+    right: 0
+    left: 0
+    margin: auto
+    bottom: auto
+  .item2-desc, .item3-desc, .item4-desc, .item5-desc
+    position: static
+
+@media screen and ( max-width: 950px)
+  .aboutUs_title
+    font-size: 48px
+    text-align: center
+  .aboutUs_text
+    font-size: 25px
+    text-align: center
+  .desc_wrap
+    padding: 30px 50px
+    max-width: rem(500px)
+    margin: auto
+  .desc
+    font-size: 16px
+    line-height: 24px
+@media screen and ( max-width: 600px)
+  .wrapper
+    padding: 1rem
+  .aboutUs_title
+    font-size: 38px
+    text-align: center
+    margin-bottom: 10px
+  .aboutUs_text
+    font-size: 22px
+    margin-bottom: 35px
+  .desc_wrap
+    max-width: rem(300px)
+    padding: 15px 20px
+    text-align: center

@@ -1,0 +1,26 @@
+extends ../layout
+
+block title
+  title Контакты
+
+block content 
+  section.contact 
+    .container.contact_container 
+      h2.contact_title Контакты
+      .contact-info_wrap 
+        .contact-info.block1
+          p.data_name ПОЧТА:
+          span.data info@lior.com
+        .contact-info.block2
+          p.data_name АДРЕС:
+          span.data Бишкек. Раззакова 19. БЦ Россия
+        .contact-info.block3
+          p.data_name ТЕЛЕФОН: 
+          span.data +996-755-15-68-68
+        .contact-info.block4
+          p.data_name Работаем с 
+          span.data 10:00
+          p.data_name до
+          span.data 19:00
+    section.contact-map_wrap 
+      iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.1602152509504!2d74.6017301151656!3d42.86946241077214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7d022ff777d%3A0x6def27c66bd6c89c!2z0JHQuNC30L3QtdGBLdGG0LXQvdGC0YAgItCg0L7RgdGB0LjRjyI!5e0!3m2!1sru!2skg!4v1623155503597!5m2!1sru!2skg' style='border:0;' allowfullscreen='' loading='lazy' width='1500' height='720')

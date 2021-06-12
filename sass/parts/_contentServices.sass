@@ -1,0 +1,63 @@
+.services_container
+  padding: 1.5rem
+.services_desc
+  margin: 2rem auto 2rem
+
+.services-blok
+  max-height: rem(765px)
+  border: 4px solid $firstColor
+  padding: 3.5rem 2rem
+  @extend %space-between
+  margin: 30px auto
+
+.services-bloks_wrap 
+  margin: 80px auto 100px auto
+
+.block_title
+  font-size: 40px
+  color: $firstColor
+  font-family: $bold
+.services-desc_text
+  font-size: 40px
+  color: $secondColor
+.block_text
+  font-size: 30px
+  font-family: $medium
+  color: $secondColor
+.services-blok_desc
+  max-width: rem(600px)
+.services-block_img
+  max-width: rem(550px)
+
+.block_img
+  width: 100%
+
+@media screen and ( max-width:  1160px)
+  .services-blok_desc
+    max-width: rem(500px)
+    padding: 1rem 1.5rem
+  .block_title
+    font-size: 30px
+  .block_text
+    font-size: 20px
+@media screen and ( max-width: 950px)
+  .services-blok_desc
+    max-width: rem(380px)
+  .block_title
+    font-size: 24px
+  .block_text
+    font-size: 16px
+@media screen and ( max-width: 850px)
+  .services_desc
+    font-size: 38px
+    text-align: center
+  .services-desc_text
+    font-size: 22px
+  .services-blok
+    padding: 1.5rem 1.5rem
+  .services-blok_desc
+    max-width: rem(550px)
+    text-align: center
+    padding: 0
+  .services-blok
+    flex-direction: column

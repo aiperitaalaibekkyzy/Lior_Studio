@@ -1,0 +1,70 @@
+.mainContent_container
+  max-width: 1300px
+  margin: 46px auto 
+  padding: 1rem 0
+.content_wrap
+  @extend %start
+  width: 100%
+  margin: 100px auto
+.img_wrap
+  width: rem(700px)
+.content_img
+  object-fit: cover
+  width: 100%
+  height: 100%
+
+.content-text_wrap 
+  max-width: 550px
+  margin: auto
+  &:nth-child(3)
+    margin-bottom: 125px
+
+.content_desc
+  font-size: 16px
+  color: $thirdColor
+  font-family: $semibold
+  line-height: 152.9%
+.third_part
+  margin-bottom: 40px
+
+.content-desc_btn
+  margin: 36px auto 
+  font-family: $regular
+
+.reverse
+  flex-direction: row-reverse
+
+.btn-wrap
+  margin: auto
+  text-align: center
+.more-btn
+  margin: 20px auto
+
+.portfolio_title
+  margin-left: 35px
+
+@media screen and ( max-width: 1200px)
+  .mainContent_container
+    margin: 26px auto 
+  .content_wrap
+    display: flex
+    flex-direction: column
+    width: 100%
+    margin: 40px auto
+  .img_wrap
+    max-width: rem(700px)
+    margin: auto
+  .content-desc_btn
+    margin: 26px auto 
+  .portfolio_title
+    text-align: center
+@media screen and ( max-width: 700px)
+  .img_wrap
+    max-width: rem(400px)
+  .content-text_wrap 
+    padding: 1.5rem
+    text-align: center
+  .content_desc
+    font-size: 14px
+  .portfolio_title
+    font-size: 32px !important

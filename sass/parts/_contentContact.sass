@@ -1,0 +1,73 @@
+.contact_container
+  max-width: rem(1130px)
+  padding: 1.5rem
+.contact_title
+  font-family: $bold
+  font-size: 48px
+  color: $firstColor
+
+.block1
+  grid-area: 'block1'
+.block2
+  grid-area: 'block2'
+.block3
+  grid-area: 'block3'
+.block4
+  grid-area: 'block4'
+.contact-info_wrap
+  grid-gap: 20px 50px
+  margin: 115px auto 80px
+  display: grid
+  grid-template-columns: repeat (2, 1fr )
+  grid-template-rows: repeat ( 2, 1fr)
+  grid-template-areas: 'block1 block2' 'block3 block4'
+
+.contact-info 
+  display: flex
+  align-items: center
+
+.data_name, .data
+  font-family: $bold
+  font-size: 28px
+
+.data_name
+  color: $secondColor
+.data
+  color: $firstColor
+  margin-right: 5px
+  margin-left: 5px
+
+.contact-map_wrap
+  max-width: rem(1520px)
+  margin: auto auto 0
+.map
+  width: 100%
+
+@media screen and ( max-width:  1110px)
+  .contact_container
+    max-width: rem(700px)
+    text-align: center
+    margin: auto
+  .contact-info_wrap
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: auto
+  .data_name, .data
+    margin: 10px auto
+@media screen and ( max-width: 740px)
+  .contact_title
+    font-size: 32px
+  .contact-info_wrap
+    max-width: rem(400px)
+  .data_name, .data
+    font-size: 16px
+    margin: 5px 2px
+  
+@media screen and ( max-width: 740px)
+  .data_name, .data
+    font-size: 13px
+    margin: 5px 2px
+  .contact-map_wrap
+    max-width: rem(600px)
